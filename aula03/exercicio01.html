@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Gabriel">
+    <title>DESAFIO 04 - AULA 02</title>
+
+    <!-- <link rel="icon" type="images/png" href="https://sc.ltwebstatic.com/she_dist/images/touch-icon-ipad-72-452a7213ef.png"> -->
+    <link rel="icon" type="images/png" href="../favicon.jpg">
+</head>
+
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS</mark>DO HTML </h1>
+    <hr>
+    <input type="button" onclick="triste();" value="FELIZ">
+    <input type="button" onclick="feliz();" value="TRISTE">
+    <img src="img/emoji_triste.jpg" id="rosto" style="width: 350px;">
+
+    <script>
+
+        function triste() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "img/emoji_feliz.png";
+        }
+        function feliz() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "";
+        }
+
+
+
+
+
+
+        console.log(tags_src);
+        let tags_src_1 = tags_src[0]
+        if (tags_src_1.title == "Rosa") {
+            tags_src_1.src = "img/violeta.jpg"
+            tags_src_1.title = "Violeta"
+
+        } else {
+            tags_src_1.src = "img/flor.png";
+            tags_src_1.title = "Rosa"
+        }
+
+
+    </script>
+
+    <div>
+        <p>Estamos aprendendo JavaScript</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar exercício</p>
+    </div>
+
+    <div>
+        <img src="img/flor.png" alt="vrosa" width="250px" title="Rosa">
+        <button onclick="troque_img()">Trocar Imagem</button>
+        <li><a href="index.html" target="_blank">Sair</a></li>
+    </div>
+
+    <script>
+
+
+
+
+    </script>
+
+</body>
+
+
+</html>
